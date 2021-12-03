@@ -1,0 +1,11 @@
+<section class="content-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto text-center">
+                <h1 class="mb-5">Welcome to The Reddit Case </h1>
+                <button class="btn btn-primary" [routerLink]="['feeds']">watch new feeds</button>
+                <app-counter (count)="changePageSize($event)" [activeItem]="pageSize"></app-counter>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,4 @@
+<div class="text-center mt-5" *ngIf="paging">
+    <button class="btn btn-primary" (click)="changePageHandler({beforeID: paging.beforeID})" [disabled]="!paging.prev">&lt; previous</button>
+    <button class="btn btn-primary  ms-5" (click)="changePageHandler({afterID: paging.aferID})" [disabled]="!paging.next">next  &gt;</button>
+</div>

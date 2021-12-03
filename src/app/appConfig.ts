@@ -1,0 +1,1 @@
+export const AVAILIBLE_FEEDS_COUNT: string[] = ['5', '10' , '25']

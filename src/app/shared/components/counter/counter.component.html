@@ -1,0 +1,5 @@
+<span class="ms-2">Count</span>
+
+<select *ngIf="availibleCounts" class=" ms-1" name="singleSelect" [(ngModel)]="activeItem" (change)="changePageSize()">
+    <option *ngFor="let count of availibleCounts" [value]="count">{{count}}</option>
+</select>

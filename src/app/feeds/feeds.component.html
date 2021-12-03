@@ -1,0 +1,7 @@
+<section class="content-wrapper" #topPage>
+    <div class="container">
+        <app-counter (count)="changePageSize($event)" [activeItem]="pageSize"></app-counter>
+        <app-feeds-list [feedsList]="feeds"></app-feeds-list>
+        <app-paging [paging]="paging" (changePage)="changePage($event, topPage)"></app-paging>
+    </div>
+</section>

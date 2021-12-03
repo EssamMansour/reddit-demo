@@ -1,0 +1,13 @@
+@import 'src/styles/variables';
+.navbar {
+    .navbar-brand {
+        color: $color-text-inverse;
+    }
+    background-color: $color-main;
+    a {
+        color: #ccc;
+        &.active {
+            color: $color-text-inverse;
+        }
+    }
+}

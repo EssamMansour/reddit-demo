@@ -1,0 +1,22 @@
+<a (click)="selectFeed()" *ngIf="item">
+    <div class="card h-100">
+
+        <div class="img-wrapper">
+            <img [src]="!item.data.thumbnail ||  item.data.thumbnail === 'self' ?  '/assets/img/default-image.jpeg' : item.data.thumbnail" class="card-img-top" [alt]="item.data.title">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{item.data.title}}</h5>
+            <p class="card-text">author: {{item.data.author}}</p>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-6">
+                    <small class="text-muted">comments: {{item.data.num_comments}}</small>
+                </div>
+                <div class="col-6 text-end">
+                    <small class="text-muted">score: {{item.data.score}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

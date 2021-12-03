@@ -1,0 +1,17 @@
+<div class="content-wrapper" *ngIf="selectedItem">
+    <div class="container">
+        <a class="btn btn-primary mb-5" routerLink="/feeds">&lt;&lt; Back</a>
+
+        <h1>{{selectedItem.data.title}}</h1>
+        <div class="body-info">
+            {{selectedItem.data.selftext}}
+            <p class="mt-4"> Author: {{selectedItem.data.author}}</p>
+
+            <img class="img-fluid" src={{selectedItem.data.url}} />
+        </div>
+        <div class="feed-footer mt-5">
+            <p class="text-muted">score: {{selectedItem.data.score}}</p>
+            <small class="text-muted">comments: {{selectedItem.data.num_comments}}</small>
+        </div>
+    </div>
+</div>

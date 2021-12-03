@@ -1,0 +1,10 @@
+<div class="content-wrapper">
+    <div class="row " *ngIf="feedsList && feedsList.length > 0; else elseBlock">
+        <div class="col-md-4 mb-4 " *ngFor="let item of feedsList ">
+            <app-feed-card [item]="item "></app-feed-card>
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <h2 class="text-center">Loading please wait :) ........</h2>
+    </ng-template>
+</div>
