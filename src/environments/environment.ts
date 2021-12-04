@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://www.reddit.com/r/sweden.json'
+  baseUrl: 'https://www.reddit.com/r/polandball.json'
 };
 
 /*
