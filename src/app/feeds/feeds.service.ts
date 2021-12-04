@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { PageModel } from '../shared/models/page.model';
 import { FeedModel } from './feed.model';
 
 @Injectable({
@@ -9,7 +10,7 @@ import { FeedModel } from './feed.model';
 })
 export class FeedsService {
   private baseUrl = environment.baseUrl;
-  private _pageing: {beforeID?: string, aferID?: string, next?: boolean, prev?: boolean} = {}
+  private _pageing: PageModel = {}
   public selectecFeed: FeedModel = null
   constructor(private http: HttpClient) { }
 
@@ -24,8 +25,8 @@ export class FeedsService {
     }))
   }
 
-  set paging(pageing: {beforeID?: string, aferID?: string} ) {
-    this._pageing = {...pageing, prev: !!pageing.beforeID, next: !!pageing.aferID }
+  set paging(data: {beforeID?: string, aferID?: string} ) {
+    this._pageing = {...data, prev: !!data.beforeID, next: !!data.aferID }
   } 
 
   get paging() {
