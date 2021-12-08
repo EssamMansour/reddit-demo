@@ -58,7 +58,8 @@ describe('FeedDetailsComponent', () => {
       score: 'string',
       title: 'string',
       selftext: '',
-      url: 'string'
+      url: 'string',
+      created: 21321312312
     }}
     feedsServiceStub.selectecFeed = item
     fixture.detectChanges();

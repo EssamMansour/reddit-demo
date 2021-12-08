@@ -14,8 +14,10 @@ let response = [{data: {
   score: 'string',
   title: 'string',
   selftext: '',
-  url: 'string'
+  url: 'string',
+  created: 213123123123
 }}]
+
 let feedsServiceStub: Partial<FeedsService>= {
   selectFeed () {
 

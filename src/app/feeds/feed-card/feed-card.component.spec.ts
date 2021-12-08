@@ -22,7 +22,8 @@ const feed = {data: {
   score: 'string',
   title: 'string',
   selftext: '',
-  url: 'string'
+  url: 'string',
+  created: 1212121212
 }}
 
 describe('FeedCardComponent', () => {

@@ -45,7 +45,8 @@ describe('FeedsService', () => {
       score: 'string',
       title: 'string',
       selftext: '',
-      url: 'string'
+      url: 'string',
+      created: 12323123
     }}
     service.selectFeed(feed)
     expect(service.selectecFeed).toEqual(feed);
