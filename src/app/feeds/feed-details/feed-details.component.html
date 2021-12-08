@@ -6,6 +6,7 @@
         <div class="body-info">
             {{selectedItem.data.selftext}}
             <p class="mt-4"> Author: {{selectedItem.data.author}}</p>
+            <p class="text-muted">created at: {{selectedItem.data.created | date}}</p>
 
             <img class="img-fluid" src={{selectedItem.data.url}} />
         </div>

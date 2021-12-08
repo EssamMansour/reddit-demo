@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SharedService {
 
-  private _pageSize: string = '25'
+  private _pageSize: string = '10'
   constructor() { }
 
   set pageSize(size) {

@@ -1,3 +1,4 @@
+
 export interface FeedModel {
     data : {
         thumbnail: string
@@ -7,5 +8,6 @@ export interface FeedModel {
         title: string,
         selftext: string,
         url: string
+        created: number
     }
 }

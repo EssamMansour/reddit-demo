@@ -23,7 +23,7 @@ describe('FeedsService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should get the feeds', () => {
+  it('should get the feeds and set the pageing', () => {
     const response = {
       before:'1',
       after:'12321',
@@ -37,7 +37,7 @@ describe('FeedsService', () => {
     })
   });
 
-  it('should be created', () => {
+  it('should set the selected Feed ', () => {
     const feed = {data: {
       thumbnail: 'string',
       num_comments: 'string',
